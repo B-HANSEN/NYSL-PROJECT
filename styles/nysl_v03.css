@@ -67,7 +67,7 @@ h3 {
 
 h4 {
     font-size: 25px;
-    padding: 20px 0px 0px 20px;
+    padding: 20px 0px 0px 0px;
 }
 
 h5 {
@@ -78,7 +78,7 @@ h5 {
 h6 {
     font-size: 15px;
     font-weight: normal;
-    padding: 0px 0px 5px 5px;
+    padding: 0px 0px 5px 10px;
 }
 
 span {
@@ -87,23 +87,41 @@ span {
 
 .subgroups {
     position: absolute;
-    top: 75px;                                             /*revert back to 300px;*/
+    top: 300px;                                            
     left: 300px;
     width: 60%;    
     color: black;
     background-color: rgb(255, 255, 255, 0.7);  
+    padding: 0px 25px 30px 20px;
     }
+
+.subgroups_short {
+    position: absolute;
+    top: 300px;                                            
+    left: 300px;
+    width: 40%;    
+    color: black;
+    background-color: rgb(255, 255, 255, 0.7);  
+    padding: 0px 25px 30px 20px;
+}
 
 .schedule {
     width: 60%;
  }
 
+
+/* TEXT-FIELDS */
 .info {
-    display: inline-block; 
-    height: 800px;                                           /*revert back to 525px;*/                   
+    display: inline-block;
+    height: max-content;                                                    
     width: 100%;
-    margin: 0px 0px 0px 20px;
 }
+
+.info_overflow {
+    height: 580px;
+    overflow-y: scroll;
+}
+
 .info p {
     padding: 0px 0px 0px 10px;
     font-size: 15px;
@@ -118,6 +136,8 @@ span {
     margin: 0px 0px 10px 0px;
 }
 
+
+/* NAVIGATION BAR */
 .link {
     display: inline-block;  
     flex-direction: column;  
@@ -144,7 +164,7 @@ span {
 }
 
 ol, ul {
-    padding: 0px 0px 10px 50px;
+    padding: 0px 20px 10px 30px;
 }
 
 ul {
@@ -167,9 +187,6 @@ ul {
     font-weight: normal;
 }
 
-.overflow {
-    overflow-y: scroll;
-}
 
 
 table {
@@ -194,27 +211,35 @@ thead {
     background: rgb(210, 226, 255);
 }
    
-/* .addresses {
-    display: inline-block;
-    padding: 0px 100px 50px 20px; 
-} */
+
+/* GAME LOCATIONS */
 
 .game_parent {
     display: flex;
     flex-direction: column;
+    width: 98%;
+    padding: 0px 0px 30px 0px;
 }
 
 .game_child {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px black;
+    padding: 10px 0px 10px 0px; 
 }
-
 .game_bottom {
-    display: flex;
-
+    padding: 0px 0px 0px 20px;
+    font-size: larger;
+}
+.game_bottom p {
+    font-size: 17px;
 }
 
-
+iframe {
+    width: 400px;
+    height: 200px;
+}
 
 
 
@@ -227,7 +252,7 @@ thead {
     margin: 0px 40px 40px 0px; 
 }
 
-
+/* REGISTRATION FORM */
 form {
     display: flex;
     flex-direction: column;
@@ -242,17 +267,21 @@ label {
     padding: 0px 10px 5px 10px;
 }
 
-input[type='text'], input[type='tel'], input[type='number'], input[type='email'], input[type='date'],input[name="signature"] {
+input[type='text'], input[type='tel'], input[type='number'], input[type='email'], input[type='date'] {
     flex-grow: 1;
     padding: 5px 5px 5px 5px;
 }
 
-input[name='size'], input[type='checkbox'] {
+input[name="signature"] {
+    padding: 5px 300px 5px 5px;
+}
+
+input[type='checkbox'] {
     margin: 0px 5px 5px 30px;
 }
 
 input[name='uniform'] {
-    margin: 30px 0px 5px 60px;
+    margin: 30px 0px 5px 30px;
 }
 
 
@@ -261,7 +290,6 @@ input[name='uniform'] {
     justify-content: space-between;
     width: 98%;
     padding: 5px 5px 5px 5px;
-
 }
 .half_row div {                                       
     display: flex;
@@ -294,12 +322,8 @@ input[name='uniform'] {
 
 }
 
-.position_child {
-    display: flex;
-    flex-direction: column;    
-    margin: 0px 5px 0px 30px;
-    }
 
+/* PLAYER POSITIONS */
 .position_interim_1 {
     display: flex;
     flex-direction: row;
@@ -308,6 +332,7 @@ input[name='uniform'] {
 .position_interim_2 {
     display: flex;
     flex-direction: column;
+    margin: 0px 5px 0px 30px;
     }
 .position_child {
     display: flex;
@@ -319,8 +344,8 @@ input[name='uniform'] {
 }
 
 .registration {
-    margin: 20px 0px 20px 0px;
-    font-size: 16px;
+    margin: 0px 10px 20px 30px;
+    font-size: 14px;
 }
 
 .signature_line {
@@ -330,8 +355,10 @@ input[name='uniform'] {
 
 .guardian {
     flex-grow: 1;
+    padding: 0px 0px 0px 20px;
 }
 
+/* SUBMIT-BUTTON */
 .submit {
     width: 12em; height: 2em;
     font-size: 20px;
@@ -365,8 +392,4 @@ input[name='uniform'] {
     text-align: right;
     width: 1400px;
     color: white;  
-}
-
-.papi{
-    color: red
 }

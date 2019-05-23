@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <title>registration_v03.html</title>
+        <link rel="stylesheet" href="./styles/nysl_v03.css" />
+        <link href="https://fonts.googleapis.com/css?family=Maiden+Orange" rel="stylesheet">
+</head>
+
+<body>
+        <header>
+                <div class="header_main">
+                        <h1>NORTHSIDE YOUTH SOCCER LEAGUE</h1>
+                        <img class="logo" src="./images/nysl_logo.png" alt="logo">
+                        <div class="socialmedia">
+                                <img class="netlogos" src="./images/twitter.png" alt="Twitter_Logo">
+                                <img class="netlogos" src="./images/facebook.svg" alt="Facebook_Logo">
+                                <img class="netlogos" src="./images/instagram.png" alt="Instagram_Logo">
+                        </div>
+                </div>
+        </header>
+
+        <main>
+                <div class="banner"></div>
+
+                <nav class="link">
+                        <a class="nav" href="index.html">HOME</a>
+                        <a class="nav" href="about_v03.html">ABOUT</a>
+                        <a class="nav" href="contact_v03.html">CONTACT</a>
+                        <a class="nav" href="rules_v03.html">RULES & POLICIES</a>
+                        <a class="nav" href="game_info_v03.html">GAME INFO</a>
+                        <a class="nav active" href="#">REGISTRATION</a>
+                </nav>
+
+                <div class="subgroups">
+                        <div class="info overflow">
+                                <h3>Registration Form</h3>
+
+                                <form action="show_data.html" method="GET">
+
+                                        <fieldset>
+
+                                                <div class="half_row">
+                                                        <div><label for="first_name">Player's First Name:</label>
+                                                                <input type="text" name="first_name" id="first_name">
+                                                        </div>
+                                                        <div><label for="last_name">Last Name:</label>
+                                                                <input type="text" name="last_name" id="last_name">
+                                                        </div>
+                                                </div>
+
+                                                <div class="street">
+                                                        <label>Street Address:</label>
+                                                        <input type="text" name="street" id="street_address">
+                                                </div>
+
+                                                <div class="half_row">
+                                                        <div><label for="City">City:</label>
+                                                                <input type="text" name="City" id="City">
+                                                        </div>
+                                                        <div><label for="Zip">Zip Code:</label>
+                                                                <input type="number" name="Zip Code" id="Zip Code">
+                                                        </div>
+                                                </div>
+
+                                                <div class="half_row">
+                                                        <div class="birth">
+                                                                <label>Birth Date (mm/dd/yyyy):</label>
+                                                                <input type="date" name="birth_date">
+                                                        </div>
+
+                                                        <div class="gender">
+                                                                <h6>Gender:</h6>
+                                                                <label><input type="radio" name="gender" ID="female">
+                                                                        female</label>
+                                                                <label><input type="radio" name="gender" ID="male">
+                                                                        male</label>
+                                                        </div>
+                                                </div>
+
+                                                <div class="grade">
+                                                        <h6>Grade:</h6>
+                                                        <label><input type="radio" name="grade" value="Pre-School">
+                                                                Pre-School</label>
+                                                        <label><input type="radio" name="grade" value="1st">
+                                                                1<sup>st</sup></label>
+                                                        <label><input type="radio" name="grade" value="2nd">
+                                                                2<sup>nd</sup></label>
+                                                        <label><input type="radio" name="grade" value="3rd">
+                                                                3<sup>nd</sup></label>
+                                                        <label><input type="radio" name="grade" value="4th">
+                                                                4<sup>th</sup></label>
+                                                        <label><input type="radio" name="grade" value="5th">
+                                                                5<sup>th</sup></label>
+                                                </div>
+
+                                                <div class="half_row">
+                                                        <div><label>Parent/ Guardian:</label>
+                                                                <input type="text" name="parent">
+                                                        </div>
+                                                </div>
+
+                                                <div class="half_row">
+                                                        <div><label>Contact Phone:</label>
+                                                                <input type="tel" name="contact">
+                                                        </div>
+
+                                                        <div>
+                                                                <label> Contact Email:</label>
+                                                                <input type="email" name="contact"
+                                                                        placeholder="name@domain.com">
+                                                        </div>
+                                                </div>
+
+                                                <h5>Which elementary schools do you live near?</h5>
+
+                                                <div class="nearest_school">
+                                                        <div>
+                                                                <h6>First closest school:</h6>
+                                                                <select>
+                                                                        <option value="select one">Select one...
+                                                                        </option>
+                                                                        <option value="AJ Katzenmaier">AJ Katzenmaier
+                                                                        </option>
+                                                                        <option value="Greenbay">Greenbay</option>
+                                                                        <option value="Howard A Yeager">Howard A Yeager
+                                                                        </option>
+                                                                        <option value="Marjorie P Hart">Marjorie P Hart
+                                                                        </option>
+                                                                        <option value="North Elementary">North
+                                                                                Elementary</option>
+                                                                        <option value="South Elementary">South
+                                                                                Elementary</option>
+                                                                </select>
+                                                        </div>
+
+
+                                                        <div>
+                                                                <h6>Second closest school:</h6>
+                                                                <select>
+                                                                        <option value="select one"> Select one...
+                                                                        </option>
+                                                                        <option value="AJ Katzenmaier">AJ Katzenmaier
+                                                                        </option>
+                                                                        <option value="Greenbay">Greenbay</option>
+                                                                        <option value="Howard A Yeager">Howard A Yeager
+                                                                        </option>
+                                                                        <option value="Marjorie P Hart">Marjorie P Hart
+                                                                        </option>
+                                                                        <option value="North Elementary">North
+                                                                                Elementary</option>
+                                                                        <option value="South Elementary">South
+                                                                                Elementary</option>
+                                                                </select>
+                                                        </div>
+                                                </div>
+
+                                                <div class="position_parent">
+                                                        <div>
+                                                                <h5><span>What position(s) do you normally play?</span>
+                                                                        (check all that apply)</h5>
+                                                        </div>
+
+                                                        <div>
+                                                                <div class="position_child">
+                                                                        <div class="position_bottom">
+                                                                                <label><input type="checkbox"
+                                                                                                name="Forward"
+                                                                                                multiple>Forward</label>
+                                                                                <label><input type="checkbox"
+                                                                                                name="Defense"
+                                                                                                multiple>Defense</label>
+                                                                        </div>
+
+                                                                        <div class="position_bottom">
+                                                                                <label><input type="checkbox"
+                                                                                                name="Midfield"
+                                                                                                multiple>Midfield</label>
+                                                                                <label><input type="checkbox"
+                                                                                                name="Goalkeeper"
+                                                                                                multiple>Goalkeeper</label>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+                                                <div class="position_parent">
+                                                        <div>
+                                                                <h5><span>What position(s) do you want play?</span>
+                                                                        (check all that apply)</h5>
+                                                        </div>
+
+                                                        <div>
+                                                                <div class="position_child">
+                                                                        <div class="position_bottom">
+                                                                                <label><input type="checkbox"
+                                                                                                name="Forward"
+                                                                                                multiple>Forward</label>
+                                                                                <label><input type="checkbox"
+                                                                                                name="Defense"
+                                                                                                multiple>Defense</label>
+                                                                        </div>
+
+                                                                        <div class="position_bottom">
+                                                                                <label><input type="checkbox"
+                                                                                                name="Midfield"
+                                                                                                multiple>Midfield</label>
+                                                                                <label><input type="checkbox"
+                                                                                                name="Goalkeeper"
+                                                                                                multiple>Goalkeeper</label>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+
+                                                <div class="position_parent">
+                                                        <div>
+                                                                <label><input type="checkbox" name="uniform">
+                                                                        Already Have a Uniform</label>
+                                                        </div>
+
+                                                        <div class="position_interim_1">
+                                                                <div class="position_interim_2">
+                                                                        <h6>Jersey Size:</h6>
+                                                                        <div class="position_child">
+                                                                                <div class="position_bottom">
+                                                                                        <label><input type="radio"
+                                                                                                        name="size"
+                                                                                                        value="Youth Small">
+                                                                                                Youth Small</option>
+                                                                                        </label>
+                                                                                        <label><input type="radio"
+                                                                                                        name="size"
+                                                                                                        value="Youth Medium">
+                                                                                                Youth Medium</option>
+                                                                                        </label>
+                                                                                        <label><input type="radio"
+                                                                                                        name="size"
+                                                                                                        value="Youth Large">
+                                                                                                Youth Large</option>
+                                                                                        </label>
+                                                                                        <label><input type="radio"
+                                                                                                        name="size"
+                                                                                                        value="Small">
+                                                                                                Small</option></label>
+                                                                                </div>
+
+                                                                                <div class="position_bottom">
+                                                                                        <label><input type="radio"
+                                                                                                        name="size"
+                                                                                                        value="Medium">
+                                                                                                Medium</option></label>
+                                                                                        <label><input type="radio"
+                                                                                                        name="size"
+                                                                                                        value="Large">
+                                                                                                Large</option></label>
+                                                                                        <label><input type="radio"
+                                                                                                        name="size"
+                                                                                                        value="Extra-Large">
+                                                                                                Extra-Large</option>
+                                                                                        </label>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+
+                                                                <div class="position_interim_2">
+                                                                        <h6>Short Size:</h6>
+                                                                        <div class="position_child">
+                                                                                <div class="position_bottom">
+                                                                                        <label><input type="radio"
+                                                                                                        name="shortsize"
+                                                                                                        value="Youth Small">
+                                                                                                Youth Small</option>
+                                                                                        </label>
+                                                                                        <label><input type="radio"
+                                                                                                        name="shortsize"
+                                                                                                        value="Youth Medium">
+                                                                                                Youth Medium</option>
+                                                                                        </label>
+                                                                                        <label><input type="radio"
+                                                                                                        name="shortsize"
+                                                                                                        value="Youth Large">
+                                                                                                Youth Large</option>
+                                                                                        </label>
+                                                                                        <label><input type="radio"
+                                                                                                        name="shortsize"
+                                                                                                        value="Small">
+                                                                                                Small</option></label>
+                                                                                </div>
+
+                                                                                <div class="position_bottom">
+                                                                                        <label><input type="radio"
+                                                                                                        name="shortsize"
+                                                                                                        value="Medium">
+                                                                                                Medium</option></label>
+                                                                                        <label><input type="radio"
+                                                                                                        name="shortsize"
+                                                                                                        value="Large">
+                                                                                                Large</option></label>
+                                                                                        <label><input type="radio"
+                                                                                                        name="shortsize"
+                                                                                                        value="Extra-Large">
+                                                                                                Extra-Large</option>
+                                                                                        </label>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+
+
+
+                                                <h3>Permission to Play</h3>
+
+                                                <p class="registration">
+                                                        I, the parent or guardian of the minor
+                                                        registrant, agree that the
+                                                        registrant and I will abide by all the rules of the
+                                                        Northside
+                                                        Youth Soccer League (NYSL). In recognizing the
+                                                        possibility of
+                                                        physical injury associated with soccer and in
+                                                        consideration for
+                                                        the “League” accepting the registrant for its soccer
+                                                        programs
+                                                        and activities, I hereby release, discharge, and/or
+                                                        otherwise
+                                                        indemnify NYSL, their employees and associated personnel
+                                                        and
+                                                        volunteers, including the facilities used for practices
+                                                        and
+                                                        games, against any claim by or on behalf of the
+                                                        registrant as a
+                                                        result of the registrant’s participation in the program
+                                                        and/or
+                                                        being transported to or from NYSL sponsored activities,
+                                                        which
+                                                        transportation.</p>
+
+
+                                                <p class="registration">By signing below, I hereby agree and authorize
+                                                        the above. In
+                                                        addition, by signing below, I also acknowledge that I
+                                                        have read
+                                                        the cancellation policy and agree to its terms.</p>
+
+
+
+                                                <div class="signature_line">
+                                                        <div class="guardian">
+                                                                <label>Parent/ Guardian Signature:
+                                                                        <input type="text" name="signature"></label>
+                                                        </div>
+
+                                                        <div>
+                                                                <label>Date: <input type="text" name="date"> </label>
+                                                        </div>
+                                                </div>
+
+                                                <div class=button>
+                                                        <button class="submit">
+                                                                <strong>SUBMIT</strong></button>
+                                                </div>
+
+
+                                        </fieldset>
+
+                                </form>
+
+
+
+
+                        </div>
+                </div>
+
+        </main>
+
+
+        <footer>
+                <div class="footer_main">
+                        <p class="footer_child">© BJ.H 2019 | BCN, ES</p>
+                </div>
+
+        </footer>
+
+
+</body>
+
+</html>

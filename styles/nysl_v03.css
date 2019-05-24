@@ -73,6 +73,7 @@ h4 {
 h5 {
     font-size: 15px;
     padding: 0px 0px 10px 20px;
+    font-size: bold;
 }
 
 h6 {
@@ -81,7 +82,10 @@ h6 {
     padding: 0px 0px 5px 10px;
 }
 
-span {
+.span_normal {
+    font-weight: normal;
+}
+.span_bold {
     font-weight: bold;
 }
 
@@ -92,7 +96,7 @@ span {
     width: 60%;    
     color: black;
     background-color: rgb(255, 255, 255, 0.7);  
-    padding: 0px 25px 30px 20px;
+    padding: 0px 0px 30px 20px;
     }
 
 .subgroups_short {

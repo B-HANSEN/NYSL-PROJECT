@@ -1,63 +1,92 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>Feedback Sent</title>
+    <meta charset="utf-8">
+    <title>show_data.html</title>
+    <link rel="stylesheet" href="./styles/nysl_v03.css" />
+    <link href="https://fonts.googleapis.com/css?family=Maiden+Orange" rel="stylesheet">
 </head>
+
 <body>
-<p align=center>&nbsp;</p>
-<h1 align=center><font size="+1">The following information has been sent as your
-  feedback:</font></h1>
+    <header>
+        <div class="header_main">
+            <h1>NORTHSIDE YOUTH SOCCER LEAGUE</h1>
+            <img class="logo" src="./images/nysl_logo.png" alt="logo">
+            <div class="socialmedia">
+                <a href="https://twitter.com/" target="_blank">
+                    <img class="netlogos" src="./images/twitter.png" alt="Twitter_Logo"></a>
 
-<table border="1" align=center width="226">
-  <tr>
-    <th align="center">Form Field</th>
-    <th align="center">Field Value</th>
-  </tr>
+                <a href="https://facebook.com/" target="_blank">
+                    <img class="netlogos" src="./images/facebook.svg" alt="Facebook_Logo"></a>
 
-<script language="javascript">
-var args = location.search.substr(1).split('&');
-for (var i = 0; i < args.length; ++i) {
-  var parts = args[i].split('=');
-  if (parts != null) {
-    var field = parts[0];
-    var value = parts[1];
-    if (value == null) {
-      value = "null"
-    }
-    else {
-      value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
-    }
+                <a href="https://instagram.com/" target="_blank">
+                    <img class="netlogos" src="./images/instagram.png" alt="Instagram_Logo"></a>
+            </div>
+        </div>
+    </header>
 
-    document.writeln('<tr><td align="center">' + field + '</td>');
-    document.writeln('<td align="center">' + value + '</td></tr>');
-  }
-}
-</script>
+    <main>
+        <div class="banner"></div>
 
-<noscript>
-<tr><td>
-<p>You need to turn on Javascript in your browser.</p>
+        <nav class="link">
+            <a class="nav" href="index.html">HOME</a>
+            <a class="nav" href="about_v03.html">ABOUT</a>
+            <a class="nav" href="contact_v03.html">CONTACT</a>
+            <a class="nav" href="rules_v03.html">RULES & POLICIES</a>
+            <a class="nav" href="game_info_v03.html">GAME INFO</a>
+            <a class="nav active" href="#">REGISTRATION</a>
+        </nav>
 
-<p>In Microsoft Internet Explorer 4 or greater:</p>
-<ul>
-<li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
-<li>Click on the "Security" tab.</li>
-<li>Click on the "Custom Level" button. (In IE 4, select "Custom"
-and then click on "Settings...".)</li>
-<li>Under "Active scripting" make sure "Enable" is selected.</li>
-</ul>
+        <div class="subgroups_showdata">
 
-<p>In Netscape version 4 or greater:</p>
-<ul>
-<li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
-<li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
-<li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
-<li>Click the <b>OK</b> button.</li>
-</ul>
+            <p align=center>&nbsp;</p>
+            <h1 align=center>
+                <font size="+1" color="black">The following information has been sent as your
+                    feedback:</font>
+            </h1>
 
-</td></tr>
-</noscript>
+            <table border="1" align=center width="250">
+                <tr>
+                    <th align="center">Form Field</th>
+                    <th align="center">Field Value</th>
+                </tr>
 
-</table>
+
+                <script language="javascript">
+                    var args = location.search.substr(1).split('&');
+                    for (var i = 0; i < args.length; ++i) {
+                        var parts = args[i].split('=');
+                        if (parts != null) {
+                            var field = parts[0];
+                            var value = parts[1];
+                            if (value == null) {
+                                value = "null"
+                            }
+                            else {
+                                value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+                            }
+
+                            document.writeln('<tr><td align="center">' + field + '</td>');
+                            document.writeln('<td align="center">' + value + '</td></tr>');
+                        }
+                    }
+                </script>
+            </table>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="footer_main">
+            <p class="footer_child">© BJ.H 2019 | BCN, ES</p>
+        </div>
+
+    </footer>
+
+
 </body>
-</html>
 
+</html>

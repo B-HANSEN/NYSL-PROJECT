@@ -109,6 +109,18 @@ h6 {
     padding: 0px 25px 30px 20px;
 }
 
+.subgroups_showdata {
+    position: absolute;
+    top: 300px;                                            
+    left: 600px;
+    width: 30%;    
+    color: black;
+    text-align: center;
+    background-color: rgb(255, 255, 255); 
+    padding: 10px;
+}
+
+
 .schedule {
     width: 60%;
  }
@@ -166,6 +178,8 @@ h6 {
     text-align: left;
     padding: 20px 80px 20px 20px;
 }
+/* END NAVIGATION BAR */
+
 
 ol, ul {
     padding: 0px 20px 10px 30px;
@@ -196,6 +210,7 @@ ul {
 table {
     display: inline-block;
     border-collapse: collapse;  
+    vertical-align: top;
     padding: 0px 0px 20px 20px;
 }
 
@@ -288,7 +303,6 @@ input[name='uniform'] {
     margin: 30px 0px 5px 30px;
 }
 
-
 .half_row {                                        
     display: flex;
     justify-content: space-between;
@@ -376,10 +390,6 @@ input[name='uniform'] {
 }
 
 
-    
-
-
-
 
 
 /*----- FOOTER -----*/
@@ -394,6 +404,6 @@ input[name='uniform'] {
 
 .footer_child {
     text-align: right;
-    width: 1400px;
+    width: 85%;
     color: white;  
 }

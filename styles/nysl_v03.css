@@ -159,25 +159,27 @@ h6 {
     flex-direction: column;  
     position: absolute;  
     top: 300px;
-    left: 50px; 
+    left: 5px; 
     font-family: 'Maiden Orange', cursive;
-    font-size: 40px;
-}
-
-.active {
-    display: block;
-    padding: 20px 80px 20px 20px;
-    background-color: rgb(255, 255, 255, 0.7);  
-    transition: padding-left 1s, background-color 3s;
+    font-size: 20px;
 }
 .nav {
     display: block;
-    width: 140px;
+    width: 120px;
     color: black;
     text-decoration: none;
     text-align: left;
-    padding: 20px 80px 20px 20px;
+    background-color: rgb(255, 255, 255, 0.7);  
+    padding: 20px 20px 10px 10px;
 }
+.active {
+    display: block;
+    text-align: right;
+    padding: 20px 20px 10px 10px;
+    background-color: rgba(151, 204, 170, 0.7); 
+    transition: padding-left 1s, background-color 3s;
+}
+
 /* END NAVIGATION BAR */
 
 
